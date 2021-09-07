@@ -63,3 +63,45 @@ function Roblox_Home_Only_Medium_Rectangle_300x250_RTP(estimate){rtp['/1015347/R
 var rtp = rtp || {};
 oz_api="valuation";oz_site="9874/18868";oz_zone="58960";oz_ad_slot_size="300x250";oz_callback=Roblox_Home_Only_Medium_Rectangle_300x250_RTP;
 </script><script type="text/javascript" src="https://tap-cdn.rubiconproject.com/partner/scripts/rubicon/dorothy.js?pc=9874/18868"></script><script type="text/javascript">rp_request_context = {};</script><script type="text/javascript" src="https://anvil.rubiconproject.com/a/api/market.js?&amp;account_id=9874&amp;site_id=18868&amp;zone_id=58960&amp;rtb_model=1&amp;cb=oz_onValuationLoaded_58960_15&amp;size_id=15"></script><script>	
+
+        googletag.cmd.push(function() {
+            Roblox = Roblox || {};
+            Roblox.AdsHelper = Roblox.AdsHelper || {};
+            Roblox.AdsHelper.slots = [];
+            Roblox.AdsHelper.slots = Roblox.AdsHelper.slots || []; Roblox.AdsHelper.slots.push({slot:googletag.defineSlot("/1015347/Roblox_Home_Only_Top_728x90", [728, 90], "32363833353331").addService(googletag.pubads()), id: "32363833353331", path: "/1015347/Roblox_Home_Only_Top_728x90"});
+Roblox.AdsHelper.slots = Roblox.AdsHelper.slots || []; Roblox.AdsHelper.slots.push({slot:googletag.defineSlot("/1015347/Roblox_Home_Only_Medium_Rectangle_300x250", [300, 250], "3135353435343533").addService(googletag.pubads()), id: "3135353435343533", path: "/1015347/Roblox_Home_Only_Medium_Rectangle_300x250"});
+ 
+            for (var key in Roblox.AdsHelper.slots) {
+                var slot = Roblox.AdsHelper.slots[key].slot;
+                var id = Roblox.AdsHelper.slots[key].id;
+                var path = Roblox.AdsHelper.slots[key].path;
+                
+                     slot.setTargeting('pos', path);
+                     slot.setTargeting('tier', rtp[path].tier);
+                if (slot.renderEnded != "undefined") {
+                    (function(slot, id)
+                    {
+                        slot.renderEndedOld = slot.renderEnded;
+                        slot.renderEnded = function() {
+                            slot.renderEndedOld();
+                            if ($('#' + id + '.gutter').css('display') == "none") {
+                                $(document).trigger("GuttersHidden");
+                            }
+                            if ($('#' + id + '.filmstrip').css('display') == "none") {
+                                $(document).trigger("FilmStripHidden");
+                            }
+                        };    
+                    }(slot, id));
+                }
+            }
+
+            googletag.pubads().setTargeting("Age", "Unknown");	
+            googletag.pubads().setTargeting("Env",  "Production");
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>  
+
+            <link rel="canonical" href="https://web.archive.org/web/20140118171238/http://www.roblox.com/">                    
+        <meta property="og:title" content="Free Games at ROBLOX.com"><meta property="og:type" content="game"><meta property="og:url" content="https://web.archive.org/web/20140118171238/http://www.roblox.com/Default.aspx"><meta property="og:site_name" content="ROBLOX"><meta property="fb:app_id" content="190191627665278"><meta property="og:description" content="User-generated MMO gaming site for kids, teens, and adults. Players architect their own worlds. Builders create free online games that simulate the real world. Create and play amazing 3D games. An online gaming cloud and distributed physics engine."></head>
