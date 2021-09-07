@@ -446,4 +446,68 @@ $(function(){
         };
     } ();
 </script>        
-                   
+ <script type="text/javascript">
+	var play_placeId = 0;
+        function redirectPlaceLauncherToLogin() {
+            location.href = "/login/default.aspx?ReturnUrl=" + encodeURIComponent("/Default.aspx");
+        }
+        function redirectPlaceLauncherToRegister() {
+            location.href = "/login/NewAge.aspx?ReturnUrl=" + encodeURIComponent("/Default.aspx");
+        }
+        function fireEventAction(action) {
+            RobloxEventManager.triggerEvent('rbx_evt_popup_action', { action: action });
+        }
+	
+    $(function () { $('.VisitButtonPlay').click(function () {play_placeId=$(this).attr('placeid');Roblox.CharacterSelect.placeid = play_placeId;Roblox.CharacterSelect.show();});$('.FeaturedGameButton').click(function () {});Roblox.CharacterSelect.robloxLaunchFunction = function (genderTypeID) { if (genderTypeID == 3) { var isInsideRobloxIDE = 'website'; if (Roblox && Roblox.Client && Roblox.Client.isIDE && Roblox.Client.isIDE()) { isInsideRobloxIDE = 'Studio'; };GoogleAnalyticsEvents.FireEvent(['Play Location', 'Guest', isInsideRobloxIDE]);GoogleAnalyticsEvents.FireEvent(['Play', 'Guest', '', 0]);$(function(){ RobloxEventManager.triggerEvent('rbx_evt_play_guest', {age:'Unknown',gender:'Female'});});} else { var isInsideRobloxIDE = 'website'; if (Roblox && Roblox.Client && Roblox.Client.isIDE && Roblox.Client.isIDE()) { isInsideRobloxIDE = 'Studio'; };GoogleAnalyticsEvents.FireEvent(['Play Location', 'Guest', isInsideRobloxIDE]);GoogleAnalyticsEvents.FireEvent(['Play', 'Guest', '', 1]);$(function(){ RobloxEventManager.triggerEvent('rbx_evt_play_guest', {age:'Unknown',gender:'Male'});});}play_placeId = (typeof $(this).attr('placeid') === 'undefined') ? play_placeId : $(this).attr('placeid'); Roblox.Client.WaitForRoblox(function() { RobloxLaunch.RequestGame('PlaceLauncherStatusPanel', play_placeId, genderTypeID); }); return false;};});;
+	
+    $(function () {
+        Roblox.Client.Resources = {
+            //<sl:translate>
+            here: "here",
+            youNeedTheLatest: "You need Our Plugin for this.  Get the latest version from ",
+            plugInInstallationFailed: "Plugin installation failed!",
+            errorUpdating: "Error updating: "
+            //</sl:translate>
+        };
+    });
+</script>
+            </div> 
+    </div>    
+
+    <!-- right column -->
+    <div class="overrideColumn2c">
+        <div id="ctl00_cphRoblox_boxAdPanel" style="padding-left:5px;">
+	
+            <div style="height: 282px;">
+                <div style="float:left;width:310px;" id="FrontPageRectangleAd">
+                    
+            <div style="width: 300px">
+    <span id="3135353435343533" class="GPTAd rectangle" data-js-adtype="gptAd">
+        <script type="text/javascript">
+            googletag.cmd.push(function () {
+                googletag.display("3135353435343533");
+            });
+        </script>
+    </span>
+    <div class="ad-annotations " style="width: 300px">
+        <span class="ad-identification">Advertisement
+            <span> - </span>
+            <a href="" class="UpsellAdButton" title="Click to learn how to remove ads!">Why am I seeing ads?</a>
+        </span>
+            <a class="BadAdButton" href="/web/20140118171238/http://www.roblox.com/Ads/ReportAd.aspx" title="click to report an offensive ad">Report</a>
+    </div>
+</div>
+
+                </div>
+            </div>
+        
+</div>
+        
+        <div class="SidePanel" style="">
+            <h2>Roblox News</h2>
+            <div id="ctl00_cphRoblox_NewsFeed1_pRobloxNews">
+	
+    
+    <div id="RobloxNews" style="float: none; width: 100%; overflow: visible;">
+        <div style="margin-bottom: 15px;">
+                              
