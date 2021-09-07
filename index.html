@@ -405,5 +405,45 @@ $(function(){
                 
             </div>
             <div style="float:right">
-	            
+	    
+	<div id="FeaturedGameButtonContainer" style="height: 1px;">
+			<div class="FeaturedGameButton VisitButtonPlay" id="FeaturedGameButton" ref="bigplaynow" placeid="41324860"></div>
+	</div>
+		   
+
+<script type="text/javascript">
+    Roblox = Roblox || {};
+
+    Roblox.BCUpsellModal = function () {
+        var resources = {
+            //<sl:translate>
+            title: "Builders Club Only",
+            body: "This is a premium feature only available to our Builders Club members.",
+            accept: "Upgrade Now"
+            //</sl:translate>
+        };
+
+        var open = function () {
+            var options = {
+                titleText: Roblox.BCUpsellModal.Resources.title,
+                bodyContent: Roblox.BCUpsellModal.Resources.body,
+                footerText: "",
+                acceptText: Roblox.BCUpsellModal.Resources.accept,
+                declineText: Roblox.GenericConfirmation.Resources.No,
+                acceptColor: Roblox.GenericConfirmation.green,
+                onAccept: function () { window.location.href = '/Upgrades/BuildersClubMemberships.aspx'; },
+                imageUrl: 'https://images.rbxcdn.com/43ac54175f3f3cd403536fedd9170c10.png'
+            };
+
+            Roblox.GenericConfirmation.open(
+                options
+            );
+        };
+
+        return {
+            open: open,
+            Resources:resources
+        };
+    } ();
+</script>        
                    
