@@ -207,7 +207,7 @@ $(function(){
                                                                     
 <div class="site-header">
     <div id="navigation-container">
-        <a href="/web/20140118171238/http://www.roblox.com/Default.aspx" class="btn-logo" data-se="nav-logo"></a>
+        <a href="Default.aspx" class="btn-logo" data-se="nav-logo"></a>
         <div id="navigation-menu">
             <ul>
                 <li><a href="/web/20140118171238/http://www.roblox.com/home" ref="nav-myroblox" data-se="nav-myhome">Home</a></li>
